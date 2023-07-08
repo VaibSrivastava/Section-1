@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <style>
+        .mycard{
+            border:1px solid red;
+            width:400px;
+            padding:50px;
+            border-radius:10px;
+            box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.301);
+            background-color: rgb(173, 213, 230);
+        }
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.205), rgba(0, 0, 255, 0.299)), url('https://themarketive.com/wp-content/uploads/2017/04/contact-background-1.jpg');
+            /*background-image: linear-gradient(60deg, rgba(255, 255, 0, 0.877), rgba(255, 0, 0, 0.932));*/
+            background-size: cover;
+        }
+
+        .myinput{
+            width:100%;
+            display:block;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            padding: 8px;
+
+        }
+        .name{
+            width:100%;
+            display:block;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            padding: 8px;
+
+        }
+        .phone{
+            width:100%;
+            display:block;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            padding: 8px;
+
+        }
+        .Messagesub{
+            width:100%;
+            display:block;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            padding: 8px;
+
+        }
+        .message{
+            width:100%;
+            display:block;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        .mybtn{
+            width:100%;
+            background-color: blue;
+            color: rgb(231, 240, 128);
+            padding: 10px;
+            font-weight:bold;
+            border-radius :5px;
+            margin-top:30px;
+            border:none;
+            box-shadow: 1px 3px 10px 2px rgba(0,0,0,0.234);
+        }
+        textarea{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid;
+            border-radius: 4px;
+            
+        }
+        .form-title{
+            font-family: Montserrat;
+            text-align: center;
+        }
+        *{
+            font-family: Merriweather;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="mycard">
+        <h1 class="form-title">Contact Form</h1>
+
+        <form action="">
+            <label for=""><b>First Name</b></label>
+            <input class="name" type="text" placeholder="Your Name">
+
+            <label for=""><b>Last Name</b></label>
+            <input class="name" type="text" placeholder="Your Last Name">
+
+            <label for=""><b>Email</b></label>
+            <input class="myinput" type="email" placeholder="Email...">
+
+            <label for=""><b>Phone Number</b></label>
+            <input class="phone" type="number" placeholder="Phone no.">
+
+            <label for=""><b>Message Subject</b></label>
+            <input class="Messagesub" type="text">
+
+            <label for=""><b>Message</b></label>
+            <textarea id="subject" name="subject" placeholder="Write Your Message.." style="height: 150px"></textarea>
+
+
+
+            <button class="mybtn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
